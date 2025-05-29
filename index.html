@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast</title>
+
+  <!-- Font Awesome for search icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+    <h1 class="app-title">Weather Forecast</h1>
+
+  <div class="search-bar">
+    <input type="text" id="cityInput" placeholder="Enter city name..." />
+    <button id="searchBtn" title="Search">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+
+  <div id="weatherCard" class="weather-card" style="display: none;">
+    <h2 id="cityName"></h2>
+    <img id="weatherIcon" src="" alt="Weather Icon" />
+    <p id="description"></p>
+    <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+    <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+    <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> m/s</p>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
